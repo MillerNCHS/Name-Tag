@@ -7,15 +7,14 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "# Your Name\n" +
-    "# The Date\n" +
-    "# Create three columns of the top 5 selling videogames of all-time\n" +
-    "print(&quot;{:20}{:&gt;15}{:&gt;20}&quot;.format(&quot;Game&quot;, &quot;Sales (In Millions)&quot;, &quot;Platform&quot;))\n" +
-    "print(&quot;{:20}{:&gt;10}{:&gt;30}&quot;.format(&quot;Minecraft&quot;,238,&quot;Multi-platform&quot;))\n" +
-    "print(&quot;{:20}{:&gt;10}{:&gt;30}&quot;.format(&quot;Grand Theft Auto V&quot;,168,&quot;Multi-platform&quot;))\n" +
-    "print(&quot;{:20}{:&gt;10}{:&gt;30}&quot;.format(&quot;Tetris (EA)&quot;,100,&quot;Mobile&quot;))\n" +
-    "print(&quot;{:20}{:&gt;10}{:&gt;30}&quot;.format(&quot;Wii Sports&quot;,82.9,&quot;Nintendo Wii&quot;))\n" +
-    "print(&quot;{:20}{:&gt;10}{:&gt;30}&quot;.format(&quot;PUBG&quot;,75,&quot;Multi-platform&quot;))";
+  var initial = "# Ask the user for their full name, job title, and place of employment\n" +
+    "# Print a nametag in that order\n" +
+    "fullName = input(&quot;Please enter your full name: &quot;)\n" +
+    "job = input(&quot;Please enter your job title: &quot;)\n" +
+    "employer = input(&quot;Please enter your place of employment: &quot;)\n" +
+    "print(fullName.title())\n" +
+    "print(job.upper())\n" +
+    "print(employer.title())";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
